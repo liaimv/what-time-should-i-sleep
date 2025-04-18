@@ -1,3 +1,4 @@
+window.addEventListener('DOMContentLoaded', () => {
 //Clock
 let hour = document.getElementById('hour');
 let min = document.getElementById('min');
@@ -83,14 +84,18 @@ function startQuiz() {
 
 // Audio
 document.querySelectorAll('img[data-sound]').forEach(img => {
+    const icon = img.parentElement;
     const soundId = img.getAttribute('data-sound');
     const audio = document.getElementById(soundId);
 
     img.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
+            icon.style.outline = "2px solid white";
         } else {
             audio.pause();
+            icon.style.outline = "2px solid rgba(255, 255, 255, 0.25)";
         }
     });
+});
 });

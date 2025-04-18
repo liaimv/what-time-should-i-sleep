@@ -69,8 +69,8 @@ function startQuiz() {
             loadQuestion(currentQuestion);
         }
         else {
-            if (sleepTarget > 10){
-                sleepTarget = 10;
+            if (sleepTarget > 12){
+                sleepTarget = 12;
             }
             question.textContent = `You should sleep ${sleepTarget} hours today!`;
             answers.forEach(div => {

@@ -168,6 +168,48 @@ p {
     outline: 2px solid white;
 }
 
+/* Information */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.info header {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 40px;
+}
+.info p {
+    color: rgb(200, 200, 200);
+    font-weight: 100;
+    margin: 0 200px;
+}
+
+.important {
+    font-weight: 400 !important;
+    font-size: 30px;
+}
+
+.resources {
+    margin-top: 100px;
+}
+.resources h4 {
+    font-size: 20px;
+}
+.resources h4, .sites a{
+    color: rgb(100, 100, 100);
+}
+.sites {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.sites a:hover {
+    color: black;
+}
+
 /* Footer */
 footer {
     position: fixed;

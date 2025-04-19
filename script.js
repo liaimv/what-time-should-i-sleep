@@ -55,7 +55,6 @@ function startQuiz() {
     function handleAnswer(answerData) {
         //Change sleep target time
         sleepTarget += answerData.sleepEffect;
-        console.log(sleepTarget);
 
         //Skip questions
         if (answerData.text === "I didn't sleep last night" || answerData.text == "I don't have any assignment to do today" || answerData.text == "I don't have any tests tomorrow") {
